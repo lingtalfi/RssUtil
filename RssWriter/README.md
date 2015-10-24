@@ -28,8 +28,7 @@ require_once "bigbang.php";
 
 //header("Content-type: text/xml"); // you don't need that line actually, but I left it here for the pleasure
 
-$o = RssFeedWriterUtil::create()
-//    ->autoEscapeMode(true)        // uncomment this to automatically apply htmlspecialchars to the values 
+$o = AuthorRssFeedWriterUtil::create()  // The AuthorRssFeedWriterUtil class automatically CDATAs the title and description on every level (channel, image, item) 
     ->setChannel(Channel::create()
             ->title("Liftoff News")
             ->link('http://liftoff.msfc.nasa.gov/')
@@ -44,12 +43,12 @@ $o = RssFeedWriterUtil::create()
             ->addItem(Item::create()
                 ->title('Star City')
                 ->link('http://liftoff.msfc.nasa.gov/news/2003/news-starcity.asp')
-                ->description('How do Americans get ready to work with Russians aboard the International Space Station? They take a crash course in culture, language and protocol at Russia\'s &lt;a href="http://howe.iki.rssi.ru/GCTC/gctc_e.htm"&gt;Star City&lt;/a&gt;.')
+                ->description('How do Americans get ready to work with Russians aboard the International Space Station? They take a crash course in culture, language and protocol at Russia\'s <a href="http://howe.iki.rssi.ru/GCTC/gctc_e.htm">Star City</a>.')
                 ->pubDate('Tue, 03 Jun 2003 09:39:21 GMT')
                 ->guid('http://liftoff.msfc.nasa.gov/2003/06/03.html#item573')
             )
             ->addItem(Item::create()
-                ->description('Sky watchers in Europe, Asia, and parts of Alaska and Canada will experience a &lt;a href="http://science.nasa.gov/headlines/y2003/30may_solareclipse.htm"&gt;partial eclipse of the Sun&lt;/a&gt; on Saturday, May 31st.')
+                ->description('Sky watchers in Europe, Asia, and parts of Alaska and Canada will experience a <a href="http://science.nasa.gov/headlines/y2003/30may_solareclipse.htm">partial eclipse of the Sun</a> on Saturday, May 31st.')
                 ->pubDate('Fri, 30 May 2003 11:06:42 GMT')
                 ->guid('http://liftoff.msfc.nasa.gov/2003/05/30.html#item572')
             )
@@ -74,7 +73,7 @@ echo $o->render();
     
 ```
 
-
+Learn more about [bigbang autoloader here](https://github.com/lingtalfi/TheScientist/blob/master/convention.portableAutoloader.eng.md).
 
 
 
