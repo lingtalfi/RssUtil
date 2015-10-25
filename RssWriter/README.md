@@ -78,5 +78,8 @@ Learn more about [bigbang autoloader here](https://github.com/lingtalfi/TheScien
 
 
 
+Dependencies
+------------------
 
+- [lingtalfi/MySimpleXmlElement 1.0.0](https://github.com/lingtalfi/MySimpleXmlElement)
 
