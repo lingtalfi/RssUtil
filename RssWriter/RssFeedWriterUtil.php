@@ -90,7 +90,7 @@ class RssFeedWriterUtil
             'category' => true,
             'comments' => false,
             'enclosure' => true,
-            'guid' => false,
+            'guid' => true,
             'pubDate' => false,
             'source' => true,
         ];
