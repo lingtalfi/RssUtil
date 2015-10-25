@@ -20,8 +20,18 @@ class Item
     private $pubDate;
     private $source;
 
+
+    private $attrSource;
+    private $attrEnclosure;
+    private $attrCategory;
+    private $attrGuid;
+
     public function __construct()
     {
+        $this->attrSource = [];
+        $this->attrEnclosure = [];
+        $this->attrCategory = [];
+        $this->attrGuid = [];
     }
 
 
@@ -37,9 +47,10 @@ class Item
         return $this;
     }
 
-    public function category($category)
+    public function category($category, array $attr = [])
     {
         $this->category = $category;
+        $this->attrCategory = $attr;
         return $this;
     }
 
@@ -55,15 +66,17 @@ class Item
         return $this;
     }
 
-    public function enclosure($enclosure)
+    public function enclosure($enclosure, array $attr = [])
     {
         $this->enclosure = $enclosure;
+        $this->attrEnclosure = $attr;
         return $this;
     }
 
-    public function guid($guid)
+    public function guid($guid, array $attr = [])
     {
         $this->guid = $guid;
+        $this->attrGuid = $attr;
         return $this;
     }
 
@@ -79,9 +92,10 @@ class Item
         return $this;
     }
 
-    public function source($source)
+    public function source($source, array $attr = [])
     {
         $this->source = $source;
+        $this->attrSource = $attr;
         return $this;
     }
 
@@ -146,6 +160,29 @@ class Item
     public function getTitle()
     {
         return $this->title;
+    }
+
+    //------------------------------------------------------------------------------/
+    // 
+    //------------------------------------------------------------------------------/
+    public function getAttrCategory()
+    {
+        return $this->attrCategory;
+    }
+
+    public function getAttrEnclosure()
+    {
+        return $this->attrEnclosure;
+    }
+
+    public function getAttrGuid()
+    {
+        return $this->attrGuid;
+    }
+
+    public function getAttrSource()
+    {
+        return $this->attrSource;
     }
 
 
