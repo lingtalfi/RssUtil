@@ -11,3 +11,7 @@ RssUtil contains utilities related to rss.
 
 
 
+Dependencies
+------------------
+
+- [MySimpleXmlElement 1.0.0](https://github.com/lingtalfi/MySimpleXmlElement)
