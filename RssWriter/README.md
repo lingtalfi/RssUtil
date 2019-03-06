@@ -18,9 +18,9 @@ How does it work?
 <?php
 
 
-use RssUtil\RssWriter\Objects\Channel;
-use RssUtil\RssWriter\Objects\Item;
-use RssUtil\RssWriter\RssFeedWriterUtil;
+use Ling\RssUtil\RssWriter\Objects\Channel;
+use Ling\RssUtil\RssWriter\Objects\Item;
+use Ling\RssUtil\RssWriter\RssFeedWriterUtil;
 
 
 require_once "bigbang.php";

@@ -1,6 +1,6 @@
 <?php
 
-namespace RssUtil\RssWriter;
+namespace Ling\RssUtil\RssWriter;
 
 /*
  * LingTalfi 2015-10-23

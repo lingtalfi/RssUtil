@@ -1,6 +1,6 @@
 <?php
 
-namespace RssUtil\RssWriter\Exception;
+namespace Ling\RssUtil\RssWriter\Exception;
 
 /*
  * LingTalfi 2015-10-23

@@ -1,17 +1,17 @@
 <?php
 
-namespace RssUtil\RssWriter;
+namespace Ling\RssUtil\RssWriter;
 
 /*
  * LingTalfi 2015-10-23
  */
-use MySimpleXmlElement\MySimpleXmlBuilder;
-use MySimpleXmlElement\MySimpleXmlElement;
-use RssUtil\RssWriter\Exception\RssWriterException;
-use RssUtil\RssWriter\Objects\Channel;
-use RssUtil\RssWriter\Objects\ChannelImage;
-use RssUtil\RssWriter\Objects\ChannelSkipDays;
-use RssUtil\RssWriter\Objects\ChannelSkipHours;
+use Ling\MySimpleXmlElement\MySimpleXmlBuilder;
+use Ling\MySimpleXmlElement\MySimpleXmlElement;
+use Ling\RssUtil\RssWriter\Exception\RssWriterException;
+use Ling\RssUtil\RssWriter\Objects\Channel;
+use Ling\RssUtil\RssWriter\Objects\ChannelImage;
+use Ling\RssUtil\RssWriter\Objects\ChannelSkipDays;
+use Ling\RssUtil\RssWriter\Objects\ChannelSkipHours;
 
 class RssFeedWriterUtil
 {
